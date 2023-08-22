@@ -80,7 +80,7 @@ def update_project_metadata(
     for field in MANDATORY_ADOPTABLE_FIELDS:
         if not getattr(project, field):
             raise errors.SnapcraftError(
-                f"Field {field!r} was not adopted from metadata"
+                f"Field {field!r} could not be adopted from metadata"
             )
 
 
